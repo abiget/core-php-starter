@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    font-size: 20px;
+}

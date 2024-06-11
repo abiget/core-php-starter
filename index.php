@@ -2,6 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
+use App\Controllers\UserController;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use App\Router;
 use Dotenv\Dotenv;
@@ -26,6 +27,10 @@ $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
 $router = new Router();
+
+$router->get('/', function () {
+    view('index');
+});
 
 $router->get('/users', [new UserController(), 'index']);
 $router->post('/users', [new UserController(), 'store']);

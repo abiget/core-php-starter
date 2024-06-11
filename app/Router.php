@@ -2,6 +2,7 @@
 namespace App;
 
 class Router {
+    
     protected $routes = [];
 
     public function get($path, $handler)

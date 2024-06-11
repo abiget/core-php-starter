@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'abi/pro',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '81c58c485a505299dde772200a149198078fcbc1',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'abi/pro' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '81c58c485a505299dde772200a149198078fcbc1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -43,6 +43,15 @@
             'reference' => '5817d0659c5b50c9b950feb9af7b9668e2c436bc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/inflector',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'graham-campbell/result-type' => array(
+            'pretty_version' => 'v1.1.2',
+            'version' => '1.1.2.0',
+            'reference' => 'fbd48bce38f73f8a4ec8583362e732e4095e5862',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../graham-campbell/result-type',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -118,6 +127,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'phpoption/phpoption' => array(
+            'pretty_version' => '1.9.2',
+            'version' => '1.9.2.0',
+            'reference' => '80735db690fe4fc5c76dfa7f9b770634285fa820',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpoption/phpoption',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'psr/clock' => array(
             'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
@@ -166,6 +184,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'symfony/polyfill-ctype' => array(
+            'pretty_version' => 'v1.29.0',
+            'version' => '1.29.0.0',
+            'reference' => 'ef4d7e442ca910c4764bce785146269b30cb5fc4',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-ctype',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/polyfill-mbstring' => array(
             'pretty_version' => 'v1.29.0',
             'version' => '1.29.0.0',
@@ -207,6 +234,15 @@
             'provided' => array(
                 0 => '2.3|3.0',
             ),
+        ),
+        'vlucas/phpdotenv' => array(
+            'pretty_version' => 'v5.6.0',
+            'version' => '5.6.0.0',
+            'reference' => '2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../vlucas/phpdotenv',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'voku/portable-ascii' => array(
             'pretty_version' => '2.0.1',
