@@ -28,11 +28,4 @@ $capsule->bootEloquent();
 
 $router = new Router();
 
-$router->get('/', function () {
-    view('index');
-});
-
-$router->get('/users', [new UserController(), 'index']);
-$router->post('/users', [new UserController(), 'store']);
-
-$router->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
+include_once 'app/web.php';

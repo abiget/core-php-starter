@@ -1,18 +1,32 @@
 <?php
+
 namespace App;
 
-class Router {
-    
+class Router
+{
+
     protected $routes = [];
 
     public function get($path, $handler)
     {
-        $this->routes['GET'][$path] = $handler;     
+        $this->routes['GET'][$path] = $handler;
     }
 
     public function post($path, $handler)
     {
         $this->routes['POST'][$path] = $handler;
+    }
+    public function patch($path, $handler)
+    {
+        $this->routes['PATCH'][$path] = $handler;
+    }
+    public function put($path, $handler)
+    {
+        $this->routes['PUT'][$path] = $handler;
+    }
+    public function delete($path, $handler)
+    {
+        $this->routes['DELETE'][$path] = $handler;
     }
 
     public function dispatch($method, $path)
@@ -21,8 +35,7 @@ class Router {
             $handler = $this->routes[$method][$path];
 
             call_user_func($handler);
-        }
-        else {
+        } else {
             header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
             echo "404 Not Found";
         }
